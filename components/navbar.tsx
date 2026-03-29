@@ -71,8 +71,11 @@ export default function Navbar() {
                 <hr className="my-4" />
                 <Button
                   className="w-full bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700"
+                  asChild
                 >
-                  {t("nav.bookCall")}
+                  <a href="https://wa.me/5492983664378?text=Hola%20Spark.it%2C%20quiero%20agendar%20una%20llamada" target="_blank" rel="noopener noreferrer">
+                    {t("nav.bookCall")}
+                  </a>
                 </Button>
               </nav>
             </SheetContent>
@@ -105,14 +108,19 @@ export default function Navbar() {
             </DropdownMenuContent>
           </DropdownMenu>
 
-          <Button variant="ghost" size="sm" className="hover:text-orange-500">
-            {t("nav.contact")}
+          <Button variant="ghost" size="sm" className="hover:text-orange-500" asChild>
+            <a href="https://wa.me/5492983664378" target="_blank" rel="noopener noreferrer">
+              {t("nav.contact")}
+            </a>
           </Button>
           <Button
             size="sm"
             className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700"
+            asChild
           >
-            {t("nav.bookCall")}
+            <a href="https://wa.me/5492983664378?text=Hola%20Spark.it%2C%20quiero%20agendar%20una%20llamada" target="_blank" rel="noopener noreferrer">
+              {t("nav.bookCall")}
+            </a>
           </Button>
         </div>
       </div>

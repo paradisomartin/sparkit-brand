@@ -24,17 +24,23 @@ export default function CTA() {
           <Button
             size="lg"
             className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 shadow-lg shadow-orange-500/25"
+            asChild
           >
-            <Calendar className="mr-2 h-4 w-4" />
-            {t("cta.button")}
+            <a href="https://wa.me/5492983664378?text=Hola%20Spark.it%2C%20quiero%20agendar%20una%20llamada" target="_blank" rel="noopener noreferrer">
+              <Calendar className="mr-2 h-4 w-4" />
+              {t("cta.button")}
+            </a>
           </Button>
           <Button
             variant="outline"
             size="lg"
             className="border-orange-500/50 hover:bg-orange-500/10 hover:border-orange-500"
+            asChild
           >
-            {t("nav.contact")}
-            <ArrowRight className="ml-2 h-4 w-4" />
+            <a href="https://wa.me/5492983664378" target="_blank" rel="noopener noreferrer">
+              {t("nav.contact")}
+              <ArrowRight className="ml-2 h-4 w-4" />
+            </a>
           </Button>
         </div>
       </div>

@@ -31,8 +31,8 @@ export default function App() {
           <ProblemSolution />
           <Features />
           <Process />
-          <CaseStudies />
-          <Testimonials />
+          {/* <CaseStudies /> */}
+          {/* <Testimonials /> */}
           <Benefits />
           <FAQ />
           <CTA />
