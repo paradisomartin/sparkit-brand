@@ -20,14 +20,16 @@ jobs:
 
       - name: Deploy production
         if: github.ref == 'refs/heads/main'
-        run: npx netlify-cli deploy --prod --dir=dist --message="production: ${{ github.sha }}"
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+          COMMIT_SHA: ${{ github.sha }}
+        run: npx netlify-cli deploy --prod --dir=dist --message="production: $COMMIT_SHA"
 
       - name: Deploy staging
         if: github.ref == 'refs/heads/develop'
-        run: npx netlify-cli deploy --dir=dist --message="staging: ${{ github.sha }}"
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+          COMMIT_SHA: ${{ github.sha }}
+        run: npx netlify-cli deploy --dir=dist --message="staging: $COMMIT_SHA"
