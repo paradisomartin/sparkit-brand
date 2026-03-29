@@ -4,19 +4,28 @@
 
 [build.environment]
   BUN_VERSION = "1.3.11"
+  NODE_VERSION = "20"
 
 # Production: main → sparkit.com.ar
 [context.production]
   command = "bun run build"
 
-# Staging: develop → deploy-preview gratuito de Netlify
-[context.branch-deploy]
+# Staging: develop branch
+[context."develop"]
   command = "bun run build"
 
-[context."develop"]
+# Other branch deploys
+[context.branch-deploy]
   command = "bun run build"
 
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
