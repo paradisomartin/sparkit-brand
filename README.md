@@ -71,3 +71,5 @@ export default defineConfig([
   },
 ])
 ```
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/84fd182d-9360-4a10-88b4-c4eefae64401/deploy-status)](https://app.netlify.com/projects/sparkit-web/deploys)
