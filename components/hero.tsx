@@ -22,7 +22,7 @@ export default function Hero() {
         <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
           <span className="text-balance block">{t("hero.title")}</span>
           <span className="bg-gradient-to-r from-orange-500 via-orange-400 to-orange-600 bg-clip-text text-transparent">
-            Spark.it
+            Spark.it pruebadeploy12345
           </span>
         </h1>
         <p className="mx-auto max-w-[42rem] text-pretty leading-normal text-muted-foreground sm:text-xl sm:leading-8">

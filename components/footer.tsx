@@ -104,22 +104,13 @@ export default function Footer() {
             <h3 className="text-sm font-semibold">{t("footer.connect")}</h3>
             <div className="flex space-x-4">
               <a
-                href="https://instagram.com/sparkit"
+                href="https://instagram.com/spark.it.tresa"
                 className="text-muted-foreground transition-colors hover:text-orange-500"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <InstagramIcon className="h-5 w-5" />
                 <span className="sr-only">Instagram</span>
-              </a>
-              <a
-                href="https://linkedin.com/company/sparkit"
-                className="text-muted-foreground transition-colors hover:text-orange-500"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <LinkedinIcon className="h-5 w-5" />
-                <span className="sr-only">LinkedIn</span>
               </a>
             </div>
           </div>
